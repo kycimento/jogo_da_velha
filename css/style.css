@@ -1,15 +1,54 @@
 main {
     text-align: center;
+    color: white;
+    font-family:lucida handwriting;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px rgb(232, 37, 164);
 }
 
 .tabuleiro div input {
     width: 100px;
     height: 100px;
-    margin: 5px;
-    border: 1px solid gray;
-    border-radius: 6px;
+    margin: 10px;
+    border: 1px solid rgb(232, 37, 164);
+    border-radius: 50px;
     font-size: 30px;
     cursor: pointer;
 
 }
 
+body {
+    background-color:rgb(231, 175, 216);
+}
+
+.resultado {
+    margin: -10px auto;
+}
+
+.span {
+    text-align: center;
+    color: white;
+    font-family:lucida handwriting;
+    font-size: 20px;
+}
+
+.velha {
+    position: fixed;
+    margin-left: 140px;
+    width: 120px;
+    margin-top: 120px;
+}
+
+.coração {
+    position: fixed;
+    margin-left: 950px;
+    width: 140px;
+    margin-top: 150px;
+}
+
+.voltar {
+    padding: 10px;
+    background-color:#ffb3d4;
+    color: #fff;
+    text-decoration:none;
+}
