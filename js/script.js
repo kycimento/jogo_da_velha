@@ -12,6 +12,9 @@ let controle = 0;
 let jogadas = 0;
 let finaljogo = false;
 
+let jogador1 = "url('../image/idj-removebg-preview-removebg-preview.png')";
+let jogador2 = "url('../image/download-removebg-preview.png')";
+
 // Click botão 1
 function clickBtn1() {
     jogadas++;
@@ -20,11 +23,11 @@ function clickBtn1() {
     if (btn.value == " " && !finaljogo) {
         if (controle == 0) {
             controle = 1;
-            btn.value = "X"
+            btn.style.backgroundImage = jogador1;
             btn1 = "X";
         } else {
             controle = 0;
-            btn.value = "O";
+            btn.style.backgroundImage = jogador2;
             btn1 = "O";
         }
     }
@@ -37,11 +40,11 @@ function clickBtn2() {
     if (btn.value == " " && !finaljogo) {
         if (controle == 0) {
             controle = 1;
-            btn.value = "X"
+            btn.style.backgroundImage = jogador1;
             btn2 = "X";
         } else {
             controle = 0;
-            btn.value = "O";
+            btn.style.backgroundImage = jogador2;
             btn2 = "O";
         }
     }
@@ -54,11 +57,11 @@ function clickBtn3() {
     if (btn.value == " " && !finaljogo) {
         if (controle == 0) {
             controle = 1;
-            btn.value = "X"
+            btn.style.backgroundImage = jogador1;
             btn3 = "X";
         } else {
             controle = 0;
-            btn.value = "O";
+            btn.style.backgroundImage = jogador2;
             btn3 = "O";
         }
     }
@@ -71,11 +74,11 @@ function clickBtn4() {
     if (btn.value == " " && !finaljogo) {
         if (controle == 0) {
             controle = 1;
-            btn.value = "X"
+            btn.style.backgroundImage = jogador1;
             btn4 = "X";
         } else {
             controle = 0;
-            btn.value = "O";
+            btn.style.backgroundImage = jogador2;
             btn4 = "O";
         }
     }
@@ -88,11 +91,11 @@ function clickBtn5() {
     if (btn.value == " " && !finaljogo) {
         if (controle == 0) {
             controle = 1;
-            btn.value = "X"
+            btn.style.backgroundImage = jogador1;
             btn5 = "X";
         } else {
             controle = 0;
-            btn.value = "O";
+            btn.style.backgroundImage = jogador2;
             btn5 = "O";
         }
     }
@@ -105,11 +108,11 @@ function clickBtn6() {
     if (btn.value == " " && !finaljogo) {
         if (controle == 0) {
             controle = 1;
-            btn.value = "X"
+            btn.style.backgroundImage = jogador1;
             btn6 = "X";
         } else {
             controle = 0;
-            btn.value = "O";
+            btn.style.backgroundImage = jogador2;
             btn6 = "O";
         }
     }
@@ -122,11 +125,11 @@ function clickBtn7() {
     if (btn.value == " " && !finaljogo) {
         if (controle == 0) {
             controle = 1;
-            btn.value = "X"
+            btn.style.backgroundImage = jogador1;
             btn7 = "X";
         } else {
             controle = 0;
-            btn.value = "O";
+            btn.style.backgroundImage = jogador2;
             btn7 = "O";
         }
     }
@@ -139,11 +142,11 @@ function clickBtn8() {
     if (btn.value == " " && !finaljogo) {
         if (controle == 0) {
             controle = 1;
-            btn.value = "X"
+            btn.style.backgroundImage = jogador1;
             btn8 = "X";
         } else {
             controle = 0;
-            btn.value = "O";
+            btn.style.backgroundImage = jogador2;
             btn8 = "O";
         }
     }
@@ -156,11 +159,11 @@ function clickBtn9() {
     if (btn.value == " " && !finaljogo) {
         if (controle == 0) {
             controle = 1;
-            btn.value = "X"
+            btn.style.backgroundImage = jogador1;
             btn9 = "X";
         } else {
             controle = 0;
-            btn.value = "O";
+            btn.style.backgroundImage = jogador2;
             btn9 = "O";
         }
     }
@@ -350,15 +353,15 @@ function clickReiniciar() {
     let b8 = document.getElementById('btn8');
     let b9 = document.getElementById('btn9');
 
-    b1.value = ' ';
-    b2.value = ' ';
-    b3.value = ' ';
-    b4.value = ' ';
-    b5.value = ' ';
-    b6.value = ' ';
-    b7.value = ' ';
-    b8.value = ' ';
-    b9.value = ' ';
+    b1.style.backgroundImage = null;
+    b2.style.backgroundImage = null;
+    b3.style.backgroundImage = null;
+    b4.style.backgroundImage = null;
+    b5.style.backgroundImage = null;
+    b6.style.backgroundImage = null;
+    b7.style.backgroundImage = null;
+    b8.style.backgroundImage = null;
+    b9.style.backgroundImage = null;
 
     //Reiniciar Label
     let lblJogador = document.getElementById('lblJogador');

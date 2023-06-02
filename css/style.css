@@ -15,6 +15,7 @@ main {
     font-size: 30px;
     cursor: pointer;
     background-color: rgb(255, 229, 245);
+    background-size: 100%;
 
 }
 
