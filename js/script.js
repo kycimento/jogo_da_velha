@@ -12,8 +12,8 @@ let controle = 0;
 let jogadas = 0;
 let finaljogo = false;
 
-let jogador1 = "url('../image/idj-removebg-preview-removebg-preview.png')";
-let jogador2 = "url('../image/download-removebg-preview.png')";
+let jogador1 = "url('./image/idj-removebg-preview-removebg-preview.png')";
+let jogador2 = "url('./image/download-removebg-preview.png')";
 
 // Click botão 1
 function clickBtn1() {
